@@ -1,0 +1,33 @@
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #FF6633;
+}
+
+.notification__nav-bar{
+    position: fixed;
+    font-size: 15px;
+    margin-left: 17px;
+    margin-top: -38px;
+    padding: 0;
+}
+
+.notification__profile{
+    font-size: 17px;
+    width: 24px;
+    height: 24px;
+}
+
+.notification__setting{
+    position: fixed;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 72px;
+    margin-top: -1px;
+}

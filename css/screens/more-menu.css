@@ -1,0 +1,33 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-top: 25px;
+}
+
+.menu__row{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.menu__row__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.menu__row__item i{
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.menu__row__item span{
+    font-size: 14px;
+    font-weight: 300;
+}
