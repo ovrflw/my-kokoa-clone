@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoa - friends</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="chat-screen">
+    <div class="status-bar">
+        <span class="status-bar__time">12:19</span>
+        <div class="status-bar__icons">
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-filter"></i>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-battery-half"></i>
+        </div>
+    </div>
+
+    <div class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+                <i class="fas fa-angle-left"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <span class="alt-header__title">박찬희</span>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search"></i></span>
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="chat-screen">
+            <div class="chat-timesmap">
+                <span>2021년 1월 16일 토요일</span>
+            </div>
+        </div>
+
+        <div class="message-row massage-animation">
+            <img src="img/img.png" class="message__img">
+            <div class="message">
+                <span class="message__author">홍길동</span>
+                <div class="message__info">
+                    <span class="message__text">뭐해뭐해뭐해뭐해</span>
+                    <span class="message__time">12:27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row row--own massage-animation--own">
+            <div class="message">
+                <div class="message__info">
+                    <span class="message__text">???</span>
+                    <span class="message__time">12:27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row row--own massage-animation--own">
+            <div class="message">
+                <div class="message__info">
+                    <span class="message__text">자는중ㅋㅋㅋㅋㅋ</span>
+                    <span class="message__time">12:28</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <i class="far fa-smile-wink fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="no-mobile">
+        <span>Your screen is to bigㅠㅠ</span>
+    </div>
+
+</body>
+
+</html>

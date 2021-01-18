@@ -3,17 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
 /* screen */
+@import "screens/login.css";
 @import "screens/ad.css";
 @import "screens/notification.css";
 @import "screens/pay_wallet.css";
 @import "screens/more-menu.css";
 @import "screens/weather.css";
+@import "screens/chat.css";
+@import "screens/setting.css";
+@import "screens/recommend.css";
+@import "screens/open-chat.css";
 
 /* component */
 @import "component/status-bar.css";
 @import "component/profile.css";
 @import "component/nav-bar.css";
 @import "component/header.css";
+@import "component/alt-header.css";
+@import "component/no-mobile.css";
 
 body{
     padding: 0 var(--width-space);
@@ -41,39 +48,47 @@ body::-webkit-scrollbar{
     margin-bottom: 25px;
 }
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform:none
+    }
+}
+
 .content{
     padding-top: 105px;
+    animation: fadeIn 0.6s linear;
 }
 
-.setting__item{
+.content__animation{
+    animation-delay: 1.25s;
+}
+
+@keyframes hideSplash{
+    from{
+        opacity: 1;
+    }
+    to{  
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen{
+    position: fixed;
+    background-color: var(--yellow);
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 20px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
-
-.item__border{
-    border-bottom: solid 0.1px rgba(0, 0, 0, 0.01);
-}
-
-.setting__item i{
-    margin-right: 15px;
-}
-
-.setting__item__text{
-    display: flex;
-    flex-direction: column;
-}
-
-.setting__item__text h2{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.setting__item__text h3{
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 8px;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 130px;
+    left: 0; top: 0;
+    z-index: 3;
+    animation: hideSplash .5s ease-in-out forwards;
+    animation-delay: 1.2s;
 }

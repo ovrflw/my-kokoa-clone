@@ -1,0 +1,77 @@
+.open-chat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.open-chat__header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.open-chat__header > span{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.open-chat__header__left span{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.open-chat__header__left i{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.open-chat__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.open-chat__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.open-chat__info > span:first-child{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.open-chat__info > span:nth-child(2){
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.open-chat__img{
+    width: 100px;
+    height: 100px;
+}
+
+.open-chat__detail{
+    display: flex;
+    align-items: center;
+}
+
+.open-chat__detail img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-chat__detail span{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.open-chat__detail span:nth-child(2){
+    margin-right: 7px;
+}
+
+.open-chat__detail span:nth-child(3){
+    color:violet
+}

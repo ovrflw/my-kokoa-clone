@@ -10,13 +10,52 @@
     background-color: #f2f2f2;
 }
 
+@keyframes appearBtnAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .nav-btn{
     display: flex;
     width: 25%;
     justify-content: center;
     font-size: 30px;
+    animation: appearBtnAnimation 0.4s ease-out forwards;
+    transform: translateY(60px);
 }
 
+.nav-btn:nth-child(2){
+    animation-delay: 0.25s;
+}
+
+.nav-btn:nth-child(3){
+    animation-delay: 0.50s;
+}
+
+.nav-btn:nth-child(4){
+    animation-delay: 0.75s;
+}
+
+@keyframes notificationAnimation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.nav-btn .notification{
+    animation: notificationAnimation 2s ease-in-out infinite;
+}
 
 
 .nav__new{
@@ -28,4 +67,9 @@
     position: fixed;
     margin-left: 30px;
     margin-top: -30px;
+}
+
+.nav__new--find{
+    margin-left: 47px;
+    margin-top: -29px;
 }

@@ -9,21 +9,8 @@
     padding-top: 55px;
     position: fixed;
     left: 0; right: 0;
-    background-color: #fff;
+    background-color: inherit;
     z-index: 1;
-}
-
-.header__title__setting{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 700;
-    
-}
-
-.header__title__setting > i{
-    font-size: 20px;
-    margin-right: 20px;
 }
 
 .header__title{
@@ -39,4 +26,17 @@
 
 .header__icons i{
     margin-left: 20px;
+}
+
+@keyframes rotateCog{
+    from{
+         transform: none;
+    }   
+    to{
+        transform:  rotateZ(360deg);
+    }
+}
+
+.header .fa-cog:hover{
+    animation: rotateCog 1.4s linear infinite;
 }

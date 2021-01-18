@@ -8,10 +8,14 @@
     padding-top: 10px;
     margin-bottom: 30px;
     color: #757575;
-    background-color: #fff;
+    background-color: inherit;
     position: fixed;
     left: 0; right: 0;
     z-index: 2;
+}
+
+.status-bar__index{
+    top: 0;
 }
 
 .status-bar__time{

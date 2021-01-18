@@ -18,6 +18,12 @@
     cursor: pointer;
 }
 
+.category__name > i:hover{
+    color: rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .profile{
     display: flex;
     justify-content: space-between;
@@ -146,18 +152,6 @@
     align-items: flex-end;
 }
 
-@keyframes shut-up{
-    30%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 0;
-        height: 0;
-    }
-}
 
 @keyframes drop-down{
     0%{
@@ -175,7 +169,7 @@
 }
 
 .shut-up{
-    animation: shut-up 0.5s ease-in-out forwards;
+    display: none;
 }
 
 .drop-down{

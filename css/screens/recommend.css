@@ -1,0 +1,13 @@
+.recommend{
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+}
+
+.recommend__content{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 133px;
+    justify-content: center;
+}
